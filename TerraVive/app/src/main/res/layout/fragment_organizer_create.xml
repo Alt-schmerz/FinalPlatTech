@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activity Name" />
+
+        <EditText
+            android:id="@+id/etActivityDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date (YYYY-MM-DD)"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etActivityTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Time (e.g. 10:00 AM)"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/etActivityLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/btnSubmitActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Activity"
+            android:layout_marginTop="20dp" />
+
+        <!-- New Delete Activity Button -->
+        <Button
+            android:id="@+id/btnDeleteActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Activity"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" /> <!-- Initially hidden -->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "1035898264988",
+    "project_id": "terravive-b69bd",
+    "storage_bucket": "terravive-b69bd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035898264988:android:e9f9e42324ffece26a3c59",
+        "android_client_info": {
+          "package_name": "com.example.terravive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjmFQn4SIVU7yUJ3iR_t-V1ghdxA5P9ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035898264988:android:a8ac32171133ef776a3c59",
+        "android_client_info": {
+          "package_name": "com.example.tungtungsahur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035898264988-3eb5fmlnf40l5l3s0u5akromd7lbdukc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tungtungsahur",
+            "certificate_hash": "eed97b9a6f69a87dd6f167e9ec5ed2fa591daefd"
+          }
+        },
+        {
+          "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjmFQn4SIVU7yUJ3iR_t-V1ghdxA5P9ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035898264988:android:ada697a64bf15c306a3c59",
+        "android_client_info": {
+          "package_name": "com.sample.terravive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035898264988-ms7dkpemscbbkrp5eqgian3g9to8d4lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sample.terravive",
+            "certificate_hash": "eed97b9a6f69a87dd6f167e9ec5ed2fa591daefd"
+          }
+        },
+        {
+          "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjmFQn4SIVU7yUJ3iR_t-V1ghdxA5P9ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035898264988-1i6t7qie7fq2bneseiifjt6q2i4ted2v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
