@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/mj"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_activities"
+        android:icon="@drawable/mj"
+        android:title="Activities" />
+    <item
+        android:id="@+id/nav_charity"
+        android:icon="@drawable/mj"
+        android:title="Charity" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/mj"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/mj"
+        android:title="Profile" />
+</menu>
