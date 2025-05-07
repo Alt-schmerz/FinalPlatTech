@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TerraVive" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:fontFamily">@font/alata_regular</item>
+        <item name="android:statusBarColor">@color/dark_green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="android:textColorPrimary">@color/brown</item>
+    </style>
+</resources>

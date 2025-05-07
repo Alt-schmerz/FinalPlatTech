@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_account_circle_24"
+    android:contentDescription="Profile Image"
+    android:layout_marginBottom="16dp"
+    android:scaleType="centerCrop" />
+
+    <!-- Admin Name -->
+    <TextView
+        android:id="@+id/adminNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <!-- Admin Email -->
+    <TextView
+        android:id="@+id/adminEmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="admin@example.com"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Admin Role -->
+    <TextView
+        android:id="@+id/adminRoleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Role: Admin"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Sign Out Button -->
+    <Button
+        android:id="@+id/signOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="#000000" />
+
+</LinearLayout>
+

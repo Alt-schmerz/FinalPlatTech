@@ -1,0 +1,192 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".CharityFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1A3128"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Charity"
+            android:textColor="#F6F8E2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:context=".DonationActivity"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor"
+            android:textColor="@color/light_brown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/donor_input"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Enter Name"
+            android:minHeight="48dp"
+            android:paddingStart="25sp"
+            android:paddingTop="9sp"
+            android:paddingEnd="9sp"
+            android:paddingBottom="9sp"
+            android:textColor="@color/brown"
+            android:textColorHint="#676E48"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipient"
+            android:textColor="@color/light_brown"
+            android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinnerRecipient"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:minHeight="48dp"
+            android:paddingStart="25sp"
+            android:paddingTop="9sp"
+            android:paddingEnd="9sp"
+            android:paddingBottom="9sp"
+            android:textColor="@color/tae"
+            android:textColorHint="#676E48"
+            android:textSize="15sp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of Donation"
+            android:textColor="@color/light_brown"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerDonationType"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/rounded_corner"
+            android:minHeight="48dp"
+            android:paddingStart="25sp"
+            android:paddingTop="9sp"
+            android:paddingEnd="9sp"
+            android:paddingBottom="9sp"
+            android:textColor="@color/tae"
+            android:textColorHint="#676E48"
+            android:textSize="15sp"
+            android:spinnerMode="dropdown" />
+
+
+        <TextView
+            android:id="@+id/donationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donation"
+            android:textColor="@color/light_brown"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/donation_input"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Enter Amount"
+            android:minHeight="48dp"
+            android:paddingStart="25sp"
+            android:paddingTop="9sp"
+            android:paddingEnd="9sp"
+            android:paddingBottom="9sp"
+            android:textColor="@color/brown"
+            android:textColorHint="#676E48"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/paymentMethodTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            android:textColor="@color/light_brown"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinnerPaymentMethod"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/rounded_corner"
+            android:minHeight="48dp"
+            android:paddingStart="25sp"
+            android:paddingTop="9sp"
+            android:paddingEnd="9sp"
+            android:paddingBottom="9sp"
+            android:textColor="@color/tae"
+            android:textColorHint="#676E48"
+            android:textSize="15sp"
+            android:spinnerMode="dropdown" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:paddingEnd="0dp"/>
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/brown"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/dark_green"
+            android:elevation="4dp"
+            android:text="PROCEED"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
