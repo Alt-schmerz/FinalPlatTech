@@ -1,71 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/login_bg"
-    tools:context=".NotificationFragment">
+    tools:context=".DonationLogsActivity">
 
-    <!-- Top Bar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#1A3128"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Donations Log"
-            android:textColor="#F6F8E2"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.Toolbar>
-
-    <!-- Tab Layout -->
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#8FA692"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
-        app:tabIndicatorColor="#D8EE76"
-        app:tabIndicatorFullWidth="true"
-        app:tabIndicatorAnimationMode="elastic"
-        app:tabSelectedTextColor="#D8EE76"
-        app:tabTextColor="@color/brown">
+        android:text="Donation Logs"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/dark_green"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white"/>
 
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="All" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Connections" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Comments" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mentions" />
-    </com.google.android.material.tabs.TabLayout>
-
-    <!-- Notifications RecyclerView -->
-    <!--    insert notifs mismo -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/notificationsRecyclerView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="#222F04"
-        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EEEED1"
+        android:padding="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Spinner
+            android:id="@+id/money_spinner"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/donation_categories"
+            android:textColor="@color/brown"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/donation_logs_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:clipToPadding="false"
+        android:layout_margin="15dp"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

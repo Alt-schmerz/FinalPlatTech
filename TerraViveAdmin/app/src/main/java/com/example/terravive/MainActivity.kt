@@ -163,7 +163,7 @@ class MainActivity : AppCompatActivity() {
                     when (role) {
                         "admin" -> {
                             Toast.makeText(this, "Welcome Admin!", Toast.LENGTH_SHORT).show()
-                            startActivity(Intent(this, AdminDashboard::class.java))
+                            startActivity(Intent(this, AdminActivityFragment::class.java))
                         }
                         "organizer" -> {
                             Toast.makeText(this, "Welcome Organizer!", Toast.LENGTH_SHORT).show()
