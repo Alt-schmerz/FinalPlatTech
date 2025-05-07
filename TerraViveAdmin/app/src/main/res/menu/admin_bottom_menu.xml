@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/admin_activities"
+        android:icon="@drawable/mj"
+        android:title="Activities" />
+
+    <item
+        android:id="@+id/reports"
+        android:icon="@drawable/reports"
+        android:title="Reports" />
+
+    <item
+        android:id="@+id/admin_dashboard"
+        android:icon="@drawable/baseline_monetization_on_24"
+        android:title="Donations " />
+
+    <item
+        android:id="@+id/admin_profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Profile" />
+</menu>

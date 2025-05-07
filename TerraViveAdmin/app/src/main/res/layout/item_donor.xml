@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reusable_donor_item"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:clickable="true"
+android:focusable="true"
+android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/rounded_corner"
+android:gravity="center_vertical"
+android:orientation="horizontal"
+android:paddingBottom="8dp"
+android:paddingTop="8dp">
+
+<ImageView
+    android:id="@+id/donor_profile_image"
+    android:layout_width="85dp"
+    android:layout_height="85dp"
+   android:padding="5dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/leaf_icon" />
+
+<TextView
+    android:id="@+id/donor_name_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:text="Donor Name"
+    android:textColor="@color/brown"
+    android:textSize="14sp" />
+
+</LinearLayout>
