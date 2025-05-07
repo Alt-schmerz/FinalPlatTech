@@ -9,6 +9,10 @@ android {
     namespace = "com.example.terravive"
     compileSdk = 35
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.terravive"
         minSdk = 23
@@ -42,7 +46,9 @@ android {
 }
 
 dependencies {
+    implementation ("com.facebook.android:facebook-android-sdk:[8,9)")
     implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.google.firebase:firebase-messaging:24.1.1")
     implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
